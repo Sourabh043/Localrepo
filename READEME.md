@@ -246,4 +246,46 @@ PS D:\gitdemo\LocalRepo> git branch
   Writing objects: 100% (3/3), 359 bytes | 359.00 KiB/s, done.
   Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
   To https://github.com/Sourabh043/Localrepo.git
-  7abc71e..8619767 main -> main</p>
+  7abc71e..8619767 main -> main# No code was selected, so I will provide a basic Git workflow script that can be used to manage a repository.
+
+````bash
+#!/bin/bash
+
+# Initialize a new Git repository
+git init
+
+# Add all files in the current directory to the repository
+git add .
+
+# Commit the changes with a meaningful message
+git commit -m "Initial commit"
+
+# Link the local repository to a remote repository
+git remote add origin https://github.com/username/repository.git
+
+# Push the changes to the remote repository
+git push -u origin main
+
+# Create a new branch for feature development
+git branch feature/new-feature
+
+# Switch to the new branch
+git checkout feature/new-feature
+
+# Make changes to the code and add them to the repository
+git add .
+
+# Commit the changes with a meaningful message
+git commit -m "Added new feature"
+
+# Push the changes to the remote repository
+git push origin feature/new-feature
+
+# Merge the feature branch into the main branch
+git checkout main
+git merge feature/new-feature
+
+# Push the updated main branch to the remote repository
+git push origin main
+```</p>
+````
