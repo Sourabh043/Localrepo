@@ -1,4 +1,4 @@
-# i learn how to push my into my github repository
+# I learn how to push my into my github repository
 
 <p>PS D:\gitdemo\neural> ls
 
